@@ -40,15 +40,17 @@ Steps:
 3. Publish the solution
 4. In the _Search API - Help from ChatGPT with Chat History_ cloud flow (screenshot below), edit the following placeholder value with your specific value:
 
-   1. URI - update to use the endpoint for the App Service deployed in the [Retrieval-Augmented Generation tutorial](https://github.com/Azure-Samples/azure-search-openai-demo)
-      ![screenshot depicting the steps of the sample cloud flow where customer-specific values are required](./images/uri-update.png)
+   1. URI - update to use the endpoint of the App Service deployed in the [Retrieval-Augmented Generation tutorial](https://github.com/Azure-Samples/azure-search-openai-demo)
+      ![Screenshot depicting the steps of the sample cloud flow where customer-specific values are required](./images/uri-update.png)
 
-5. Update the Chatbot to have a 'Fallback - API' topic by making a copy of the existing Fallback topic. Set the Power Automate inputs as follows (After doing this, the 'Multiple Topics Matched' topic will automatically update to use the new 'Fallback - API' topic):
+5. Update the Chatbot to have a 'Fallback - API' topic by making a copy of the existing Fallback system topic. Set the Power Automate inputs as follows (After doing this, the 'Multiple Topics Matched' topic will automatically update to use the new 'Fallback - API' topic):
 
    1. Input update:
+
       ![Power Automate inputs](./images/input-update.png)
 
    2. What the Multiple Topics Matched topic will look like:
+   
       ![Multiple Topics Matched](./images/topic-update.png)
 
 6. Update your authentication settings. The Bot is set to 'Teams authentication' by default.
