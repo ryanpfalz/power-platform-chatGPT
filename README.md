@@ -4,7 +4,7 @@ Samples for using ChatGPT and your custom data with the Power Platform.
 
 ## PVA to OpenAI
 
-This codebase extends the example laid out in [this excellent power-platform-chatGPT guide](https://github.com/mathyousee/power-platform-chatGPT). This guide seeks to go beyond just exposing a vanilla ChatGPT deployment via Power Virtual Agents, but to tailor responses from your ChatGPT deployment using your own custom data sources. To achieve this, this guide will combine the backend deployed with [this Retrieval-Augmented Generation codebase](https://github.com/Azure-Samples/azure-search-openai-demo), which will provision Cognitive Search, Web API, and Azure OpenAI instance.
+This codebase extends the example laid out in [this excellent power-platform-chatGPT guide](https://github.com/mathyousee/power-platform-chatGPT). This guide seeks to go beyond just exposing a vanilla ChatGPT deployment via Power Virtual Agents, but to tailor responses from your ChatGPT deployment using your own custom data sources. To achieve this, this guide will combine the backend deployed with [this Retrieval-Augmented Generation codebase](https://github.com/Azure-Samples/azure-search-openai-demo), which will provision a Cognitive Search, Web API, and Azure OpenAI instance.
 
 This sample seeks to provide an easy way to try out:
 
