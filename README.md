@@ -50,12 +50,12 @@ Steps:
       ![Power Automate inputs](./images/input-update.png)
 
    2. What the Multiple Topics Matched topic will look like:
-   
+
       ![Multiple Topics Matched](./images/topic-update.png)
 
 6. Update your authentication settings. The Bot is set to 'Teams authentication' by default.
 7. Publish the _PVA-OpenAI_ bot
-8. Deploy the bot to a channel (e.g. Teams channel, Dynamics 365, etc.)
+8. Deploy the bot to a channel (e.g. Teams channel, Dynamics 365, Power App, etc.)
 
 ### Notes and considerations
 
