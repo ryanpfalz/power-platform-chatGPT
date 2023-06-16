@@ -72,4 +72,4 @@ Steps:
   - The Virtual Agent's integration with Power Automate allows you to easily add additional automations/logical flows based on conversation topics
   - Power Virtual agents has out-of-the-box authentication mechanisms
 
-  If you have the capacity and need to maintain and further customize the UI codebase without a need to integrate with tools like Power Apps or Teams and don't want to build conversation-driven automations, then the UI deployed in the Retrieval-Augmented Generation tutorial may be a better solution for you.
+  If you have the capacity and need to maintain and further customize the UI codebase without a need to integrate with tools like Power Apps or Teams and don't want to build conversation-driven automations with Power Automate (and would instead prefer to opt for a service like Logic Apps), then the UI deployed in the Retrieval-Augmented Generation tutorial may be a better solution for you.
