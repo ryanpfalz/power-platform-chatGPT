@@ -57,9 +57,14 @@ Steps:
 7. Publish the _PVA-OpenAI_ bot
 8. Deploy the bot to a channel (e.g. Teams channel, Dynamics 365, Power App, etc.)
 
-### Notes and considerations
+### Security considerations
 
-- On Security: For improved security, the [API and OpenAI services deployed in Azure may be best deployed as a backend of an Azure API Management instance](https://github.com/Azure-Samples/openai-python-enterprise-logging), so that another layer of security can be added between your Virtual Agent and bot. This will also enable the backend components to be secured on a virtual network, prohibiting your backend services from being publicly routable. Moreover, to add additional security between your backend services and Power Platform components, you can use a Web Application Firewall on [Azure Front Door](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview) or [Application Gateway](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview) configured with [custom prevention rules](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/create-custom-waf-rules) to forbid requests that do not match variables like Power Platform URIs, headers, IP address ranges, and more.
+- For improved security, the [API and OpenAI services deployed in Azure may be best deployed as a backend of an Azure API Management instance](https://github.com/Azure-Samples/openai-python-enterprise-logging), so that another layer of security can be added between your Virtual Agent and bot. This will also enable the backend components to be secured on a virtual network, prohibiting your backend services from being publicly routable. Moreover, to add additional security between your backend services and Power Platform components, you can use a Web Application Firewall on [Azure Front Door](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview) or [Application Gateway](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview) configured with [custom prevention rules](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/create-custom-waf-rules) to forbid requests that do not match variables like Power Platform URIs, headers, IP address ranges, and more.
+
+- ![Security considerations](./images/OpenAI_Chatbot_Security_Actions.png)
+
+### Additonal notes and considerations
+
 - This sample is provided as a learning tool to easily try out the capability, not presented as a final solution
 - The ChatGPT model is leveraged in the Power Virtual Agent as a _fallback_ for when a structured Topic or Conversation Booster does not exist.
 - As this is non-production sample, the API key is stored directly in the flow definition, KeyVault is a more secure approach.
