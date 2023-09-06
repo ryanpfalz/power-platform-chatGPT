@@ -45,7 +45,7 @@ Steps:
 
 5. Update the Chatbot to have a 'Fallback - API' topic by making a copy of the existing Fallback system topic. In the Action step, hover your mouse over the flow, and click the 'Change flow' arrow icon to use the Search API flow. Then, set the Power Automate inputs as follows:
 
-    [!Change flow](./images/changeflow.png)
+    ![Change flow](./images/changeflow.png)
 
    1. Input update:
 
