@@ -43,13 +43,18 @@ Steps:
    1. URI - update to use the endpoint of the App Service deployed in the [Retrieval-Augmented Generation tutorial](https://github.com/Azure-Samples/azure-search-openai-demo)
       ![Screenshot depicting the steps of the sample cloud flow where customer-specific values are required](./images/uri-update.png)
 
-5. Update the Chatbot to have a 'Fallback - API' topic by making a copy of the existing Fallback system topic. Set the Power Automate inputs as follows (After doing this, the 'Multiple Topics Matched' topic will automatically update to use the new 'Fallback - API' topic):
+5. Update the Chatbot to have a 'Fallback - API' topic by making a copy of the existing Fallback system topic. In the Action step, hover your mouse over the flow, and click the 'Change flow' arrow icon to use the Search API flow. Then, set the Power Automate inputs as follows:
+
+    [!Change flow](./images/changeflow.png)
 
    1. Input update:
 
       ![Power Automate inputs](./images/input-update.png)
 
-   2. What the Multiple Topics Matched topic will look like:
+      - LastMessage.Text can be found under 'System'
+      - Global.MessageHistory and Global.SystemMessage can be found under 'Custom'
+
+   3. Update the Multiple Topics Matched topic to use the newly updated Fallback API topic. After updating, it will look like this:
 
       ![Multiple Topics Matched](./images/topic-update.png)
 
