@@ -62,7 +62,7 @@ Steps:
 7. Publish the _PVA-OpenAI_ bot
 8. Deploy the bot to a channel (e.g. Teams channel, Dynamics 365, Power App, etc.)
 
-#### Authenticating with OAuth protected backend
+#### Authenticating with OAuth-protected backend
 - If your App Service orchestrator is protected by an identity provider using OAuth (e.g., Active Directory), you will need to authenticate the requests made by Power Automate with the backend. One approach to achieving this may be to follow the steps outlined in [this article](https://powerusers.microsoft.com/t5/Power-Automate-Community-Blog/Generate-an-Azure-OAuth2-0-Token-from-a-quot-service-quot-Flow/ba-p/61979).
 
 ### Security considerations
