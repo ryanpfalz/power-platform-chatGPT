@@ -62,6 +62,9 @@ Steps:
 7. Publish the _PVA-OpenAI_ bot
 8. Deploy the bot to a channel (e.g. Teams channel, Dynamics 365, Power App, etc.)
 
+#### Authenticating with OAuth protected backend
+- If your App Service orchestrator is protected by an identity provider using OAuth (e.g., Active Directory), you will need to authenticate the requests made by Power Automate with the backend. One approach to achieving this may be to follow the steps outlined in [this article](https://powerusers.microsoft.com/t5/Power-Automate-Community-Blog/Generate-an-Azure-OAuth2-0-Token-from-a-quot-service-quot-Flow/ba-p/61979).
+
 ### Security considerations
 
 - For improved security, the [API and OpenAI services deployed in Azure may be best deployed as a backend of an Azure API Management instance](https://github.com/Azure-Samples/openai-python-enterprise-logging), so that another layer of security can be added between your client and backend. This will also enable the backend components to be secured on a virtual network, prohibiting your backend services from being publicly routable. Moreover, to add additional security between your backend services and Power Platform components, you can use a Web Application Firewall on [Azure Front Door](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview) or [Application Gateway](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview) configured with [custom prevention rules](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/create-custom-waf-rules) to forbid requests that do not match variables like URIs, headers, IP address ranges, and more.
